@@ -10,7 +10,7 @@ const PRODUTOS_MOCK = [
     categoria: 'Comidas', 
     regional: 'Recife', 
     sazonal: false, 
-    img: 'https://images.unsplash.com/photo-1547058881-aa0edd92aab3?q=80&w=600&auto=format&fit=crop' 
+    img: 'https://images.unsplash.com/photo-1695240954002-3ef3e1c667a4?q=80&w=600&auto=format&fit=crop' 
   },
   { 
     id: 2, 
@@ -28,7 +28,7 @@ const PRODUTOS_MOCK = [
     categoria: 'Sobremesas', 
     regional: 'Todas', 
     sazonal: false, 
-    img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=600&auto=format&fit=crop' 
+    img: 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=600&auto=format&fit=crop' 
   },
   { 
     id: 4, 
@@ -37,7 +37,7 @@ const PRODUTOS_MOCK = [
     categoria: 'Junina', 
     regional: 'Todas', 
     sazonal: true, 
-    img: 'https://images.unsplash.com/photo-1621849400042-dc789eb538d7?q=80&w=600&auto=format&fit=crop' 
+    img: 'https://images.unsplash.com/photo-1633519817765-76fe80796cd4?q=80&w=600&auto=format&fit=crop' 
   }
 ];
 
