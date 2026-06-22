@@ -10,7 +10,7 @@ const PRODUTOS_MOCK = [
     categoria: 'Comidas', 
     regional: 'Recife', 
     sazonal: false, 
-    img: 'https://images.unsplash.com/photo-1695240954002-3ef3e1c667a4?q=80&w=600&auto=format&fit=crop' 
+    img: '/cuscuz.jpg' // Puxa da pasta public
   },
   { 
     id: 2, 
@@ -19,7 +19,7 @@ const PRODUTOS_MOCK = [
     categoria: 'Comidas', 
     regional: 'Todas', 
     sazonal: false, 
-    img: 'https://images.unsplash.com/photo-1626132647523-66f5bf380027?q=80&w=600&auto=format&fit=crop' 
+    img: '/tapioca.jpg' // Puxa da pasta public
   },
   { 
     id: 3, 
@@ -28,7 +28,7 @@ const PRODUTOS_MOCK = [
     categoria: 'Sobremesas', 
     regional: 'Todas', 
     sazonal: false, 
-    img: 'https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=600&auto=format&fit=crop' 
+    img: '/bolo.jpg' // Puxa da pasta public
   },
   { 
     id: 4, 
@@ -37,14 +37,13 @@ const PRODUTOS_MOCK = [
     categoria: 'Junina', 
     regional: 'Todas', 
     sazonal: true, 
-    img: 'https://images.unsplash.com/photo-1633519817765-76fe80796cd4?q=80&w=600&auto=format&fit=crop' 
+    img: '/canjica.jpg' // Puxa da pasta public
   }
 ];
 
 export default function Cardapio() {
   const { unidade, adicionarAoCarrinho } = useApp();
 
-  // Filtragem dinâmica baseada nas regras de negócio (Unidade/Sazonalidade)
   const produtosFiltrados = PRODUTOS_MOCK.filter(p => p.regional === 'Todas' || unidade.includes(p.regional));
 
   return (
